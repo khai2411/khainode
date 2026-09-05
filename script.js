@@ -32,7 +32,6 @@ const closeMenuBtn = document.getElementById('close-menu');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 const FOCUSABLE_SELECTOR = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-
 function trapFocus(container, e) {
     if (e.key !== 'Tab') return;
     const focusables = Array.from(container.querySelectorAll(FOCUSABLE_SELECTOR)).filter(el => el.offsetParent !== null);
@@ -47,7 +46,6 @@ function trapFocus(container, e) {
         first.focus();
     }
 }
-
 function openMobileMenu() {
     mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
     mobileMenu.setAttribute('aria-hidden', 'false');
@@ -55,14 +53,12 @@ function openMobileMenu() {
     if (firstLink) firstLink.focus();
     document.addEventListener('keydown', handleMobileMenuKeydown);
 }
-
 function closeMobileMenu() {
     mobileMenu.classList.add('opacity-0', 'pointer-events-none');
     mobileMenu.setAttribute('aria-hidden', 'true');
     document.removeEventListener('keydown', handleMobileMenuKeydown);
     mobileMenuBtn.focus();
 }
-
 function handleMobileMenuKeydown(e) {
     if (e.key === 'Escape') {
         closeMobileMenu();
@@ -70,7 +66,6 @@ function handleMobileMenuKeydown(e) {
     }
     trapFocus(mobileMenu, e);
 }
-
 mobileMenuBtn.addEventListener('click', openMobileMenu);
 closeMenuBtn.addEventListener('click', closeMobileMenu);
 mobileLinks.forEach(link => {
@@ -114,7 +109,6 @@ const modalContent = document.getElementById('modal-content');
 const closeModal = document.getElementById('close-modal');
 const triggers = document.querySelectorAll('.project-trigger');
 let lastModalTrigger = null;
-
 function handleModalKeydown(e) {
     if (e.key === 'Escape') {
         closeProjectModal();
@@ -122,7 +116,6 @@ function handleModalKeydown(e) {
     }
     trapFocus(modalContent, e);
 }
-
 triggers.forEach(trigger => {
     trigger.addEventListener('click', () => {
         const title = trigger.getAttribute('data-title');
