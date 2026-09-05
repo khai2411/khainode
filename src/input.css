@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==== Custom styles (migrated from style.css) ==== */
 .bg-grid-pattern {
     background-size: 40px 40px;
     background-image: linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),

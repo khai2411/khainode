@@ -1,14 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        { "type": "host", "value": "www.khainode.my.id" }
-      ],
-      "destination": "https://khainode.my.id/$1",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
