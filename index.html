@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai - Portfolio</title>
+    <meta name="description" content="Portofolio Khairul Huda, seorang Creative Developer dan Desainer UI/UX asal Indonesia yang mengkhususkan diri dalam pengalaman web interaktif.">
+    <meta name="keywords" content="Creative Developer, UI/UX Designer, Frontend Developer, React, Tailwind CSS, Portfolio">
+    <meta name="author" content="Khairul Huda">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://khainode.my.id/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://khainode.my.id/">
+    <meta property="og:title" content="Khai - Portfolio">
+    <meta property="og:description" content="Portofolio Khairul Huda, seorang Creative Developer dan Desainer UI/UX asal Indonesia yang mengkhususkan diri dalam pengalaman web interaktif.">
+    <meta property="og:image" content="https://khainode.my.id/assets/og-image.jpg">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Khai - Portfolio">
+    <meta name="twitter:description" content="Portofolio Khairul Huda, seorang Creative Developer dan Desainer UI/UX asal Indonesia yang mengkhususkan diri dalam pengalaman web interaktif.">
+    <meta name="twitter:image" content="https://khainode.my.id/assets/og-image.jpg">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://cdn.phototourl.com; connect-src 'self' https://api.web3forms.com; frame-ancestors 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                fontFamily: {
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    display: ['"Space Grotesk"', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#38bdf8',
+                        dark: '#06090e',
+                        surface: '#0b111a',
+                        whatsapp: '#25D366',
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+                        'marquee': 'marquee 30s linear infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)', filter: 'blur(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)', filter: 'blur(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Khairul Huda",
+      "alternateName": "Khai",
+      "url": "https://khainode.my.id/",
+      "image": "https://cdn.phototourl.com/member/2026-08-06-6ccb15f9-2465-4f34-ac84-3e97a439a93e.jpg",
+      "jobTitle": "Creative Developer & UI/UX Designer",
+      "nationality": "Indonesia",
+      "sameAs": [
+        "https://github.com/khai2411",
+        "https://www.linkedin.com/in/khairul-huda-951118377",
+        "https://www.instagram.com/khairul241109"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-[#f0f9ff] text-slate-800 dark:bg-[#06090e] dark:text-slate-200 transition-colors duration-500 selection:bg-primary selection:text-white overflow-x-hidden">
+    <a href="#main-content" class="skip-link fixed left-4 top-4 z-[9999] -translate-y-24 focus:translate-y-0 bg-primary text-white font-bold px-5 py-3 rounded-xl shadow-lg transition-transform duration-200 outline-none">Lewati ke konten utama</a>
+    <div id="preloader" class="fixed inset-0 z-[9999] bg-[#f0f9ff] dark:bg-[#06090e] flex items-center justify-center transition-opacity duration-500">
+        <div class="flex flex-col items-center gap-4">
+            <div class="relative w-16 h-16">
+                <div class="absolute inset-0 border-4 border-slate-200 dark:border-white/10 rounded-full"></div>
+                <div class="absolute inset-0 border-4 border-primary rounded-full border-t-transparent animate-spin"></div>
+            </div>
+            <span class="text-sm font-bold tracking-widest uppercase animate-pulse">Memuat...</span>
+        </div>
+    </div>
+    <div id="toast-container" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-2 pointer-events-none"></div>
+    <div class="fixed inset-0 z-0 bg-grid-pattern pointer-events-none"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-sky-400/25 rounded-full blur-[140px] pointer-events-none opacity-50 dark:opacity-20 z-0"></div>
+    <header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-6">
+        <nav class="bg-white/70 dark:bg-surface/70 backdrop-blur-xl border border-slate-200 dark:border-white/10 rounded-full px-6 py-3 flex items-center gap-8 shadow-sm transition-all duration-300 w-full max-w-4xl justify-between md:justify-start">
+            <a href="#" class="text-xl font-bold font-display tracking-tight text-slate-900 dark:text-white">
+                khairul<span class="text-primary"> huda</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium ml-auto">
+                <a href="#home" class="nav-link text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors">Home</a>
+                <a href="#about" class="nav-link text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors">About</a>
+                <a href="#work" class="nav-link text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors">Project</a>
+                <a href="#contact" class="px-5 py-2 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full font-bold text-xs hover:scale-105 transition-transform">Hire Me</a>
+            </div>
+            <div class="flex items-center gap-3 md:ml-4 border-l border-slate-200 dark:border-white/10 pl-4 md:pl-6">
+                <button id="theme-toggle" aria-label="Ganti Mode Gelap" class="w-8 h-8 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-100 dark:hover:bg-white/10 transition-colors focus:outline-none">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden text-slate-900 dark:text-white p-1 focus:outline-none">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div id="mobile-menu" class="mobile-menu-panel fixed inset-0 z-40 bg-[#f8fafc]/95 dark:bg-[#03060b]/95 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-300 overflow-y-auto">
+        <div class="min-h-full flex flex-col px-6 py-24">
+            <button id="close-menu" aria-label="Tutup Menu" class="absolute top-7 right-6 w-11 h-11 rounded-full border border-slate-200 dark:border-white/10 bg-white/70 dark:bg-white/5 text-slate-600 dark:text-slate-200 flex items-center justify-center hover:scale-105 hover:border-primary transition-all">
+                <i class="fas fa-xmark text-lg"></i>
+            </button>
+            <div class="max-w-md w-full mx-auto">
+                <div class="mb-8">
+                    <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-primary mb-2">Khai • Portfolio</p>
+                    <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Explore my <span class="text-primary">work.</span></h2>
+                </div>
+                <div class="grid gap-3">
+                    <a href="#home" class="mobile-menu-item mobile-link group">
+                        <span class="menu-icon"><i class="fas fa-house"></i></span>
+                        <span><b>Home</b><small>Beranda portfolio</small></span>
+                        <i class="fas fa-arrow-right menu-arrow"></i>
+                    </a>
+                    <a href="#about" class="mobile-menu-item mobile-link group">
+                        <span class="menu-icon"><i class="fas fa-user"></i></span>
+                        <span><b>About</b><small>Tentang saya</small></span>
+                        <i class="fas fa-arrow-right menu-arrow"></i>
+                    </a>
+                    <a href="#work" class="mobile-menu-item mobile-link group" id="all-certificates-link">
+                        <span class="menu-icon"><i class="fas fa-award"></i></span>
+                        <span><b>Sertifikat</b><small>Sertifikasi & pencapaian</small></span>
+                        <i class="fas fa-arrow-right menu-arrow"></i>
+                    </a>
+                    <a href="#contact" class="mobile-menu-item mobile-link group">
+                        <span class="menu-icon"><i class="fas fa-paper-plane"></i></span>
+                        <span><b>Contact</b><small>Hubungi saya</small></span>
+                        <i class="fas fa-arrow-right menu-arrow"></i>
+                    </a>
+                </div>
+                <div class="mt-8">
+                    <div class="flex items-center justify-between mb-3">
+                        <p class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">Tech & Certification</p>
+                        <span class="text-[10px] text-primary font-semibold">MY STACK</span>
+                    </div>
+                    <div class="mobile-tech-grid">
+                        <a href="#work" class="tech-badge tech-mimo issuer-filter" data-issuer-filter="Mimo" aria-label="Lihat sertifikat Mimo">
+                            <span class="issuer-logo mimo-logo">mimo</span><span>Mimo</span><i class="fas fa-arrow-right tech-arrow"></i>
+                        </a>
+                        <a href="#work" class="tech-badge tech-cisco issuer-filter" data-issuer-filter="Cisco Networking Academy" aria-label="Lihat sertifikat Cisco">
+                            <span class="issuer-logo cisco-logo"><span></span><span></span><span></span><span></span><span></span></span><span>Cisco</span><i class="fas fa-arrow-right tech-arrow"></i>
+                        </a>
+                        <a href="#work" class="tech-badge tech-dicoding issuer-filter" data-issuer-filter="Dicoding Indonesia" aria-label="Lihat sertifikat Dicoding">
+                            <span class="issuer-logo dicoding-logo">D</span><span>Dicoding</span><i class="fas fa-arrow-right tech-arrow"></i>
+                        </a>
+                        <a href="#work" class="tech-badge tech-idn issuer-filter" data-issuer-filter="ID-Networkers" aria-label="Lihat sertifikat ID-Networkers">
+                            <span class="issuer-logo idn-logo">IDN</span><span>IDN</span><i class="fas fa-arrow-right tech-arrow"></i>
+                        </a>
+                        <a href="#work" class="tech-badge tech-microsoft issuer-filter" data-issuer-filter="Microsoft Indonesia" aria-label="Lihat sertifikat Microsoft">
+                            <span class="issuer-logo microsoft-logo" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Microsoft</span><i class="fas fa-arrow-right tech-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Available for 2026
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main-content" tabindex="-1">
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/60 dark:bg-white/5 border border-slate-200 dark:border-white/10 backdrop-blur-sm mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        </span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">Available for 2026</span>
+                    </div>
+                    <h1 class="font-display text-5xl md:text-7xl lg:text-[6rem] font-bold leading-[1.1] md:leading-[0.9] tracking-tight mb-6 text-slate-900 dark:text-white">
+                        <div class="overflow-hidden">
+                            <span class="block">Frontend</span>
+                        </div>
+                        <div class="overflow-hidden pb-2">
+                            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-sky-400 to-secondary">Pengalaman</span>
+                        </div>
+                        <div class="overflow-hidden">
+                            <span class="block">Digital.</span>
+                        </div>
+                    </h1>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-md mx-auto lg:mx-0 mb-10 leading-relaxed">
+                        Mengubah ide-ide kompleks menjadi situs<span class="text-slate-900 dark:text-white font-semibold"> web interaktif berkinerja tinggi dan</span> estetis.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#work" class="group relative px-8 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full font-bold overflow-hidden hover:scale-[1.02] transition-transform shadow-xl shadow-primary/10">
+                            <span class="relative z-10">my certificate</span>
+                            <div class="absolute inset-0 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                        </a>
+                        <a href="#contact" class="flex items-center justify-center w-12 h-12 rounded-full border border-slate-200 dark:border-white/20 hover:border-primary hover:text-primary transition-colors focus:outline-none" aria-label="Gulir ke Kontak">
+                            <i class="fas fa-arrow-down animate-bounce"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative h-[400px] md:h-[600px] flex items-center justify-center order-1 lg:order-2">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-3xl animate-pulse-slow"></div>
+                    <div class="absolute w-64 h-64 md:w-96 md:h-96 border border-slate-200 dark:border-white/10 rounded-full animate-spin-slow"></div>
+                    <div class="absolute w-48 h-48 md:w-72 md:h-72 border border-dashed border-slate-300 dark:border-white/20 rounded-full animate-spin-slow [animation-direction:reverse]"></div>
+                    <div class="absolute top-[10%] left-[5%] md:left-[15%] w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-[#0b111a]/80 backdrop-blur-sm border border-slate-200 dark:border-white/10 rounded-2xl shadow-xl flex items-center justify-center text-[#E34F26] text-2xl md:text-3xl animate-float [animation-delay:0.2s] z-20 group hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="absolute top-[25%] right-[0%] md:right-[10%] w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-[#0b111a]/80 backdrop-blur-sm border border-slate-200 dark:border-white/10 rounded-2xl shadow-xl flex items-center justify-center text-[#1572B6] text-2xl md:text-3xl animate-float [animation-delay:1.5s] z-20 group hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="absolute bottom-[20%] left-[0%] md:left-[10%] w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-[#0b111a]/80 backdrop-blur-sm border border-slate-200 dark:border-white/10 rounded-2xl shadow-xl flex items-center justify-center text-[#F7DF1E] text-2xl md:text-3xl animate-float [animation-delay:0.8s] z-20 group hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="absolute bottom-[10%] right-[5%] md:right-[15%] w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-[#0b111a]/80 backdrop-blur-sm border border-slate-200 dark:border-white/10 rounded-2xl shadow-xl flex items-center justify-center text-[#61DAFB] text-2xl md:text-3xl animate-float [animation-delay:2.2s] z-20 group hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="relative w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-white/10 shadow-2xl z-10 group cursor-pointer">
+                        <img src="https://cdn.phototourl.com/member/2026-08-06-6ccb15f9-2465-4f34-ac84-3e97a439a93e.jpg" 
+                             alt="Khairul Profile" 
+                             width="800" height="800"
+                             loading="eager" fetchpriority="high"
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-white/50 dark:bg-white/5 border-y border-slate-200 dark:border-white/5 backdrop-blur-sm relative z-10">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="font-display text-4xl font-bold text-slate-900 dark:text-white mb-12">Abo<span class="text-primary">ut</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[500px]">
+                <div class="spotlight-card col-span-1 md:col-span-2 bg-sky-50 dark:bg-surface border border-slate-200 dark:border-white/10 rounded-3xl p-8 flex flex-col justify-between overflow-hidden relative group">
+                    <div class="spotlight-overlay"></div>
+                    <div class="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
+                    <div class="z-10">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Tech Stack</h3>
+                        <p class="text-slate-500 text-sm">Tools & bahasa yang saya gunakan sehari-hari untuk membangun web.</p>
+                    </div>
+                    <div class="absolute inset-0 flex items-center w-full overflow-hidden">
+                        <div class="flex gap-8 animate-marquee whitespace-nowrap opacity-50 group-hover:opacity-100 transition-opacity">
+                            <span class="text-5xl font-display font-bold text-slate-300 dark:text-slate-700">HTML CSS JavaScript React</span>
+                            <span class="text-5xl font-display font-bold text-slate-300 dark:text-slate-700">HTML CSS JavaScript React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-card col-span-1 bg-slate-900 text-white rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                    <div class="spotlight-overlay"></div>
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary blur-3xl opacity-30 rounded-full"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-4 text-2xl">🌏</div>
+                        <h3 class="text-xl font-bold mb-1">Based in</h3>
+                        <p class="text-slate-400">Indonesia</p>
+                    </div>
+                    <div class="relative z-10">
+                        <p class="text-xs text-slate-400 uppercase tracking-wider mb-1">Local Time</p>
+                        <p id="local-time" class="text-3xl font-display font-bold font-mono">00:00</p>
+                    </div>
+                </div>
+                <div class="spotlight-card col-span-1 bg-white dark:bg-surface border border-slate-200 dark:border-white/10 rounded-3xl p-8 flex flex-col justify-center gap-6">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-bold uppercase tracking-wide">
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> my social media 
+                        </span>
+                    </div>
+                    <div class="flex gap-4 text-2xl text-slate-600 dark:text-slate-400 relative z-10">
+                        <a href="https://github.com/khai2411" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors hover:scale-110 transform"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/khairul-huda-951118377?trk=contact-info" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors hover:scale-110 transform"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/khairul241109?igsh=ZG1mb3dmOGZkNTR3" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors hover:scale-110 transform"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="spotlight-card col-span-1 md:col-span-2 bg-gradient-to-br from-primary to-secondary text-white rounded-3xl p-8 flex flex-col justify-center relative overflow-hidden">
+                    <div class="spotlight-overlay"></div>
+                    <i class="fas fa-quote-right absolute top-8 right-8 text-6xl text-white/10"></i>
+                    <h3 class="text-2xl md:text-3xl font-display font-bold leading-tight relative z-10 max-w-lg">
+                        Mengubah baris kode menjadi pengalaman digital yang fungsional dan estetis
+                    </h3>
+                    <p class="mt-4 text-white/80 text-sm font-mono relative z-10">— khai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-24 relative z-10">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+                    Skill<span class="text-primary">s</span>
+                </h2>
+                <p class="text-slate-500 max-w-lg mx-auto">Menguasai struktur HTML/CSS, logika JavaScript, pengembangan berbasis komponen React beserta integrasi API, serta pengelolaan struktur data untuk aplikasi web.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-white dark:bg-surface border border-slate-200 dark:border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 group spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 text-2xl group-hover:bg-primary group-hover:text-white transition-colors relative z-10">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white mb-3 relative z-10">HTML & CSS</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed relative z-10">Menguasai konsep inti pembuatan halaman web, struktur markup, serta penataan gaya (styling) dan tata letak yang responsif.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-white dark:bg-surface border border-slate-200 dark:border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 group spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 text-2xl group-hover:bg-primary group-hover:text-white transition-colors relative z-10">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white mb-3 relative z-10">JavaScript & React</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed relative z-10">Memahami logika pemrograman inti untuk membangun fungsionalitas dan interaktivitas tingkat lanjut pada web serta Berpengalaman dalam pengembangan berbasis komponen, penggunaan React hooks, serta integrasi pemanggilan API eksternal (external APIs).</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-white dark:bg-surface border border-slate-200 dark:border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 group spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 text-2xl group-hover:bg-primary group-hover:text-white transition-colors relative z-10">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white mb-3 relative z-10">Web Development</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed relative z-10">Menguasai pengembangan web modern mulai dari struktur HTML/CSS, logika JavaScript, pengembangan berbasis komponen React beserta hooks dan integrasi API, hingga pengelolaan struktur data dasar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="py-24 bg-sky-50/60 dark:bg-[#090d14]">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-16 text-center">
+              <span class="text-primary">pengalaman</span>
+            </h2>
+            <div class="relative border-l border-slate-200 dark:border-white/10 ml-4 md:ml-10 space-y-12">
+                <div class="relative pl-8 md:pl-12 group">
+                    <span class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700 group-hover:bg-primary transition-colors ring-4 ring-transparent group-hover:ring-primary/20"></span>
+                    <div class="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
+                        <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white group-hover:text-primary transition-colors">Pengembangan Landing Page Responsif
+</h3>
+                        <span class="text-xs font-bold px-2 py-1 rounded bg-slate-200 dark:bg-white/10 text-slate-600 dark:text-slate-300 w-fit">2024 - Present</span>
+                    </div>
+                    <p class="text-primary font-medium mb-2">Freelance / Personal Project</p>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-2xl">Merancang dan membangun halaman web dari awal dengan fokus pada estetika dan pengalaman pengguna dan Menggunakan Tailwind CSS untuk mempercepat proses penataan gaya (styling) dengan desain yang bersih dan adaptif di berbagai ukuran layar seperti (mobile, tablet, desktop).
+</p>
+                </div>
+                <div class="relative pl-8 md:pl-12 group">
+                    <span class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700 group-hover:bg-primary transition-colors ring-4 ring-transparent group-hover:ring-primary/20"></span>
+                    <div class="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
+                        <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white group-hover:text-primary transition-colors">Manajemen & Integrasi Kode</h3>
+                        <span class="text-xs font-bold px-2 py-1 rounded bg-slate-200 dark:bg-white/10 text-slate-600 dark:text-slate-300 w-fit">2024 - Present</span>
+                    </div>
+                    <p class="text-primary font-medium mb-2">Freelance / Personal Project</p>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-2xl">Mengelola kode sumber menggunakan Git untuk version control guna memastikan keamanan dan kemudahan pembaruan fitur dan Melakukan deployment proyek secara berkala ke platform cloud seperti Vercel untuk memastikan aplikasi web dapat diakses secara publik dengan cepat dan stabil.
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="py-24 relative z-10">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <h2 class="font-display text-4xl md:text-6xl font-bold text-slate-900 dark:text-white">
+                    <br><span class="text-primary">Pencampaian & Kredensial Profesional</span>
+                </h2>
+                <p class="text-slate-500 text-sm md:text-base max-w-xs text-left md:text-right">
+Berikut adalah kumpulan sertifikat yang saya peroleh dari Mimo, ID-Networkers, Cisco Networking Academy, Dicoding, dan Microsoft. Data judul, penerbit, tanggal terbit, serta masa berlaku disesuaikan dengan informasi pada sertifikat asli.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 md:gap-y-32" id="projects-grid">
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="HTML" data-title="HTML" data-category="HTML"
+ data-image="assets/sertifikat-1.webp" data-desc="Memahami konsep inti website dan pengetahuan HTML yang dibutuhkan untuk membuat halaman web." data-type="Certificate of Completion" data-month="06 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-1.webp" width="1080" height="1520" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="HTML"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">HTML</h3><p class="text-slate-500 text-sm">Mimo · 06 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="CSS" data-title="CSS" data-category="CSS"
+ data-image="assets/sertifikat-2.webp" data-desc="Memahami konsep inti CSS dan pengetahuan yang dibutuhkan untuk melakukan styling pada halaman web." data-type="Certificate of Completion" data-month="06 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-2.webp" width="1080" height="1533" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="CSS"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">CSS</h3><p class="text-slate-500 text-sm">Mimo · 06 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="JavaScript" data-title="JavaScript" data-category="JavaScript"
+ data-image="assets/sertifikat-3.webp" data-desc="Memahami konsep inti yang dibutuhkan untuk pemrograman JavaScript." data-type="Certificate of Completion" data-month="07 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-3.webp" width="1080" height="1525" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="JavaScript"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">JavaScript</h3><p class="text-slate-500 text-sm">Mimo · 07 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="React" data-title="React" data-category="React"
+ data-image="assets/sertifikat-4.webp" data-desc="Memahami konsep inti React, penggunaan API eksternal, React Hooks, dan React API lainnya." data-type="Certificate of Completion" data-month="07 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-4.webp" width="1080" height="1524" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="React"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">React</h3><p class="text-slate-500 text-sm">Mimo · 07 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="TypeScript" data-title="TypeScript" data-category="TypeScript"
+ data-image="assets/sertifikat-5.webp" data-desc="Memahami konsep inti yang dibutuhkan untuk pemrograman TypeScript." data-type="Certificate of Completion" data-month="08 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-5.webp" width="1080" height="1520" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="TypeScript"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">TypeScript</h3><p class="text-slate-500 text-sm">Mimo · 08 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="SQL" data-title="SQL" data-category="SQL"
+ data-image="assets/sertifikat-6.webp" data-desc="Memahami konsep SQL untuk membuat tabel, mengambil insight dengan query, dan mengelola database relasional dasar." data-type="Certificate of Completion" data-month="11 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-6.webp" width="1080" height="1521" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="SQL"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">SQL</h3><p class="text-slate-500 text-sm">Mimo · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Python" data-title="Python" data-category="Python"
+ data-image="assets/sertifikat-7.webp" data-desc="Memahami konsep inti pemrograman Python, termasuk struktur data, control statements, function, dan module." data-type="Certificate of Completion" data-month="11 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-7.webp" width="1080" height="1525" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Python"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Python</h3><p class="text-slate-500 text-sm">Mimo · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="Front-End Development" data-title="Front-End Development" data-category="Front-End Development"
+ data-image="assets/sertifikat-8.webp" data-desc="Berhasil menyelesaikan Professional Certificate Front-End Development dengan HTML, CSS, JavaScript, React, dan data structures." data-type="Professional Certificate" data-month="07 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-8.webp" width="1080" height="832" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Front-End Development"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Front-End Development</h3><p class="text-slate-500 text-sm">Mimo · 07 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Full-Stack Development" data-title="Full-Stack Development" data-category="Full-Stack Development"
+ data-image="assets/sertifikat-9.webp" data-desc="Berhasil menyelesaikan Professional Certificate Full-Stack Development dengan HTML, CSS, JavaScript, React, data structures, algorithms, Node.js, Express.js, dan SQL." data-type="Professional Certificate" data-month="11 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-9.webp" width="1019" height="801" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Full-Stack Development"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Full-Stack Development</h3><p class="text-slate-500 text-sm">Mimo · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="Python Development" data-title="Python Development" data-category="Python Development"
+ data-image="assets/sertifikat-10.webp" data-desc="Berhasil menyelesaikan Professional Certificate Python Development yang mencakup pemrograman Python, functional dan object-oriented programming, module, API, AI, dan LLM." data-type="Professional Certificate" data-month="11 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-10.webp" width="1013" height="809" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Python Development"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Python Development</h3><p class="text-slate-500 text-sm">Mimo · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Back-End Development" data-title="Back-End Development" data-category="Back-End Development"
+ data-image="assets/sertifikat-11.webp" data-desc="Berhasil menyelesaikan Professional Certificate Back-End Development yang mencakup JavaScript, pembuatan backend API dengan Node dan Express, serta database SQL." data-type="Professional Certificate" data-month="11 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Mimo" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-11.webp" width="1012" height="804" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Back-End Development"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Back-End Development</h3><p class="text-slate-500 text-sm">Mimo · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="Networking" data-title="Cisco Dasar" data-category="Networking"
+ data-image="assets/sertifikat-12.webp" data-desc="Telah menyelesaikan kursus online “Cisco Dasar” yang diselenggarakan oleh ID-Networkers (IDN.ID) melalui LMS.IDN.ID." data-type="Certificate of Completion" data-month="08 Agustus 2026" data-validity="08 Agustus 2029" data-issuer="ID-Networkers" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-12.webp" width="1080" height="827" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Cisco Dasar"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Cisco Dasar</h3><p class="text-slate-500 text-sm">ID-Networkers · 08 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Networking" data-title="Mikrotik Dasar" data-category="Networking"
+ data-image="assets/sertifikat-13.webp" data-desc="Telah menyelesaikan kursus online “Mikrotik Dasar” yang diselenggarakan oleh ID-Networkers (IDN.ID) melalui LMS.IDN.ID." data-type="Certificate of Completion" data-month="08 Agustus 2026" data-validity="08 Agustus 2029" data-issuer="ID-Networkers" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-13.webp" width="1080" height="829" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Mikrotik Dasar"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Mikrotik Dasar</h3><p class="text-slate-500 text-sm">ID-Networkers · 08 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="Cisco Networking" data-title="Getting Started with Cisco Packet Tracer" data-category="Cisco Networking"
+ data-image="assets/sertifikat-14.webp" data-desc="Berhasil menyelesaikan Getting Started with Cisco Packet Tracer melalui program Cisco Networking Academy." data-type="Cisco Networking Academy Certificate" data-month="12 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Cisco Networking Academy" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-14.webp" width="1080" height="729" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Getting Started with Cisco Packet Tracer"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Getting Started with Cisco Packet Tracer</h3><p class="text-slate-500 text-sm">Cisco Networking Academy · 12 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Pemrograman Web" data-title="Belajar Dasar Pemrograman Web" data-category="Pemrograman Web"
+ data-image="assets/sertifikat-15.webp" data-desc="Berhasil menyelesaikan kelas Belajar Dasar Pemrograman Web." data-type="Sertifikat Kompetensi Kelulusan" data-month="11 Agustus 2026" data-validity="11 Agustus 2029" data-issuer="Dicoding Indonesia" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-15.webp" width="989" height="698" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Belajar Dasar Pemrograman Web"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Belajar Dasar Pemrograman Web</h3><p class="text-slate-500 text-sm">Dicoding Indonesia · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="Financial Literacy" data-title="Introduction to Financial Literacy" data-category="Financial Literacy"
+ data-image="assets/sertifikat-16.webp" data-desc="Berhasil menyelesaikan kelas Introduction to Financial Literacy." data-type="Sertifikat Kompetensi Kelulusan" data-month="11 Agustus 2026" data-validity="11 Agustus 2029" data-issuer="Dicoding Indonesia" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-16.webp" width="985" height="706" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Introduction to Financial Literacy"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Introduction to Financial Literacy</h3><p class="text-slate-500 text-sm">Dicoding Indonesia · 11 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="JavaScript" data-title="Belajar Dasar Pemrograman JavaScript" data-category="JavaScript"
+ data-image="assets/sertifikat-17.webp" data-desc="Berhasil menyelesaikan kelas Belajar Dasar Pemrograman JavaScript." data-type="Sertifikat Kompetensi Kelulusan" data-month="12 Agustus 2026" data-validity="12 Agustus 2029" data-issuer="Dicoding Indonesia" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-17.webp" width="995" height="698" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Belajar Dasar Pemrograman JavaScript"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Belajar Dasar Pemrograman JavaScript</h3><p class="text-slate-500 text-sm">Dicoding Indonesia · 12 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger md:mt-24"
+ data-filter-category="Front-End Development" data-title="Belajar Fundamental Front-End Web Development" data-category="Front-End Development"
+ data-image="assets/sertifikat-18.webp" data-desc="Berhasil menyelesaikan kelas Belajar Fundamental Front-End Web Development." data-type="Sertifikat Kompetensi Kelulusan" data-month="20 Agustus 2026" data-validity="20 Agustus 2029" data-issuer="Dicoding Indonesia" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-18.webp" width="995" height="697" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Belajar Fundamental Front-End Web Development"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Belajar Fundamental Front-End Web Development</h3><p class="text-slate-500 text-sm">Dicoding Indonesia · 20 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Front-End Development" data-title="Belajar Membuat Front-End Web untuk Pemula" data-category="Front-End Development"
+ data-image="assets/sertifikat-19.webp" data-desc="Berhasil menyelesaikan kelas Belajar Membuat Front-End Web untuk Pemula dengan mempelajari dasar-dasar pembuatan antarmuka web menggunakan HTML, CSS, dan JavaScript." data-type="Sertifikat Kompetensi Kelulusan" data-month="13 Agustus 2026" data-validity="13 Agustus 2029" data-issuer="Dicoding Indonesia" data-recipient="Khairul huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-19.webp" width="1080" height="759" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Belajar Membuat Front-End Web untuk Pemula"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Belajar Membuat Front-End Web untuk Pemula</h3><p class="text-slate-500 text-sm">Dicoding Indonesia · 13 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+<article class="project-item spotlight-card group cursor-pointer project-trigger"
+ data-filter-category="Data Science" data-title="Menerapkan Data Science untuk Solusi Model AI secara End to End" data-category="Data Science"
+ data-image="assets/sertifikat-20.webp" data-desc="Mengikuti dan menyelesaikan 1 jam sesi pembelajaran dalam Online Short Course Menerapkan Data Science untuk Solusi Model AI secara End to End sebagai bagian dari program Microsoft Elevate Training Center Skill Sprint." data-type="Sertifikat Apresiasi" data-month="24 Agustus 2026" data-validity="Tidak ditentukan" data-issuer="Microsoft Indonesia" data-recipient="Khairul Huda">
+ <div class="spotlight-overlay"></div>
+ <div class="relative w-full cert-card bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
+  <div class="overflow-hidden"><img src="assets/sertifikat-20.webp" width="1080" height="763" loading="lazy" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.01]" alt="Menerapkan Data Science untuk Solusi Model AI secara End to End"></div>
+ </div>
+ <div class="flex justify-between items-start border-b border-slate-200 dark:border-white/10 pb-4 relative z-10">
+  <div><h3 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">Menerapkan Data Science untuk Solusi Model AI secara End to End</h3><p class="text-slate-500 text-sm">Microsoft Indonesia · 24 Agustus 2026</p></div>
+  <span class="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all"><i class="fas fa-plus group-hover:rotate-90 transition-transform"></i></span>
+ </div>
+</article>
+</div>
+        </div>
+    </section>
+    <section id="contact" class="py-24 md:py-32 relative overflow-hidden bg-sky-100/50 dark:bg-[#090d14]">
+    <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
+    <div class="container mx-auto px-6 relative z-10 max-w-5xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="text-center lg:text-left">
+                <h2 class="font-display text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 tracking-tighter leading-tight">
+                    Mari kita bangun sesuatu yang menakjubkan dan<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Keren</span>
+                </h2>
+                <p class="text-slate-500 mb-8 text-lg">proyek yang sedang direncanakan atau hanya ingin menyapa, kotak masuk saya selalu terbuka.</p>
+                <div class="space-y-4 text-left hidden lg:block">
+                    <div class="flex items-center gap-4 text-slate-600 dark:text-slate-400">
+                        <i class="fas fa-envelope text-primary w-6"></i>
+                        <span>khairulhuda2411@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-600 dark:text-slate-400">
+                        <i class="fas fa-map-marker-alt text-primary w-6"></i>
+                        <span>Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:max-w-md lg:ml-auto">
+                <div class="bg-white dark:bg-surface p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200 dark:border-white/10">
+                    <form id="contact-form" class="space-y-5">
+                        <input type="hidden" name="access_key" value="77c118de-f2d4-43ba-8206-ad3a670ef82e">
+                        <input type="hidden" name="subject" value="Pesan Baru dari Website Portfolio">
+                        <input type="checkbox" name="botcheck" id="botcheck" class="hidden" style="display:none;position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Name</label>
+                            <input type="text" id="contact-name" name="name" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all dark:text-white" placeholder="Your Name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Email</label>
+                            <input type="email" id="contact-email" name="email" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all dark:text-white" placeholder="email@gmail.com" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Message</label>
+                            <textarea id="contact-message" name="message" rows="4" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all dark:text-white" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" aria-label="Kirim pesan" class="w-full py-3.5 bg-slate-900 dark:bg-white text-white dark:text-black rounded-xl font-bold text-base hover:scale-[1.02] transition-transform shadow-lg focus:outline-none cursor-pointer">
+                            <span id="submit-btn-text">Send Message</span>
+                        </button>
+                        <div id="form-result" role="status" aria-live="polite" class="text-center text-sm font-medium mt-2"></div>
+                        <p class="text-xs text-slate-400 dark:text-slate-500 text-center mt-2">Formulir bermasalah? Kirim email langsung ke <a href="mailto:kontak@khainode.my.id" class="underline hover:text-primary">kontak@khainode.my.id</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-12 border-t border-slate-200 dark:border-white/10">
+    <div class="container mx-auto px-6 max-w-5xl text-center">
+        <p class="text-xs font-bold tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">Dibangun Dengan</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-6">
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="HTML5">
+                <i class="fab fa-html5 text-2xl text-[#E34F26]"></i>
+                <span class="text-sm font-medium">HTML5</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="CSS3">
+                <i class="fab fa-css3-alt text-2xl text-[#1572B6]"></i>
+                <span class="text-sm font-medium">CSS3</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="JavaScript">
+                <i class="fab fa-js text-2xl text-[#F7DF1E]"></i>
+                <span class="text-sm font-medium">JavaScript</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="Tailwind CSS">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#38BDF8" xmlns="http://www.w3.org/2000/svg"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
+                <span class="text-sm font-medium">Tailwind CSS</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="Visual Studio Code">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#007ACC" d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>
+                <span class="text-sm font-medium">VS Code</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="GitHub">
+                <i class="fab fa-github text-2xl"></i>
+                <span class="text-sm font-medium">GitHub</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" title="Vercel">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 1L24 22H0L12 1Z"/></svg>
+                <span class="text-sm font-medium">Vercel</span>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+<footer class="mt-0 pt-8 pb-10 border-t border-slate-200 dark:border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+    <div class="flex gap-6 mb-4 md:mb-0">
+        <a href="https://www.linkedin.com/in/khairul-huda-951118377?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">LinkedIn</a>
+        <a href="https://www.instagram.com/khairul241109?igsh=ZG1mb3dmOGZkNTR3" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Instagram</a>
+        <a href="https://github.com/khai2411" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">GitHub</a>
+    </div>
+    <div>© <span id="year">2026</span> Khairul. All rights reserved.</div>
+</footer>
+<script>
+const form = document.getElementById('contact-form');
+const result = document.getElementById('form-result');
+const submitBtn = document.getElementById('submit-btn');
+const toastContainer = document.getElementById('toast-container');
+function showToast(message, type) {
+    if (!toastContainer) return;
+    const toast = document.createElement('div');
+    const isSuccess = type === 'success';
+    toast.className = 'pointer-events-auto px-5 py-3 rounded-xl shadow-xl text-sm font-medium text-white transition-all duration-300 opacity-0 translate-y-2 ' +
+        (isSuccess ? 'bg-emerald-500' : 'bg-red-500');
+    toast.textContent = message;
+    toastContainer.appendChild(toast);
+    requestAnimationFrame(() => {
+        toast.classList.remove('opacity-0', 'translate-y-2');
+    });
+    setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+    }, 4000);
+}
+const submitBtnText = document.getElementById('submit-btn-text');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const honeypot = document.getElementById('botcheck');
+        if (honeypot && honeypot.checked) {
+            return;
+        }
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        if (submitBtnText) submitBtnText.textContent = "Mengirim...";
+        submitBtn.disabled = true;
+        submitBtn.setAttribute('aria-busy', 'true');
+        result.textContent = "";
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {
+                    result.textContent = "Pesan berhasil dikirim.";
+                    result.style.color = "green";
+                    showToast("Pesan berhasil dikirim. Terima kasih!", "success");
+                    form.reset();
+                } else {
+                    result.textContent = jsonResponse.message || "Gagal mengirim pesan.";
+                    result.style.color = "red";
+                    showToast(jsonResponse.message || "Gagal mengirim pesan.", "error");
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.textContent = "Terjadi kesalahan jaringan.";
+                result.style.color = "red";
+                showToast("Terjadi kesalahan jaringan.", "error");
+            })
+            .then(() => {
+                if (submitBtnText) submitBtnText.textContent = "Send Message";
+                submitBtn.disabled = false;
+                submitBtn.removeAttribute('aria-busy');
+            });
+    });
+}
+</script>
+<div id="project-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0" id="modal-backdrop"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4 pointer-events-none">
+            <div class="bg-white dark:bg-[#111] w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl transform scale-95 opacity-0 transition-all duration-300 pointer-events-auto border border-slate-200 dark:border-white/10" id="modal-content">
+                <div class="relative">
+                    <button id="close-modal" aria-label="Tutup Modal" class="absolute top-4 right-4 w-10 h-10 bg-white/50 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center text-slate-900 dark:text-white hover:bg-red-500 hover:text-white transition-colors z-10 focus:outline-none">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="h-64 md:h-96 w-full overflow-hidden">
+                        <img id="modal-image" src="" class="w-full h-full object-contain bg-white" alt="Detail Sertifikat">
+                    </div>
+                    <div class="p-8 md:p-12">
+                        <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
+                            <div>
+                                <span id="modal-category" class="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">Category</span>
+                                <h2 id="modal-title" class="text-3xl md:text-5xl font-display font-bold text-slate-900 dark:text-white">Project Title</h2>
+                            </div>    
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                            <div class="md:col-span-2">
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Penjelasan Sertifikat</h3>
+                                <p id="modal-desc" class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">Description is here.</p>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2">Jenis Sertifikat</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span id="modal-type" class="px-3 py-1 bg-slate-100 dark:bg-white/10 rounded-full text-xs font-medium text-slate-600 dark:text-slate-300">Certificate of Completion</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2">Diberikan kepada</h4>
+                                    <p id="modal-recipient" class="text-slate-600 dark:text-slate-400">Khairul huda</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2">Penerbit</h4>
+                                    <p id="modal-issuer" class="text-slate-600 dark:text-slate-400">Mimo</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2">Bulan Diterbitkan</h4>
+                                    <p id="modal-month" class="text-slate-600 dark:text-slate-400">Agustus 2026</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2">Masa Berlaku</h4>
+                                    <p id="modal-validity" class="text-slate-600 dark:text-slate-400">Tidak ditentukan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/62881011915106" target="_blank" aria-label="Chat WhatsApp" class="fixed bottom-8 right-8 z-[60] w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
+        <i class="fab fa-whatsapp text-3xl leading-none z-10 group-hover:rotate-12 transition-transform"></i>
+    </a>
+    <button id="scrollToTopBtn" aria-label="Gulir ke Atas" class="fixed bottom-28 right-8 z-50 w-12 h-12 bg-white dark:bg-surface border border-slate-200 dark:border-white/20 rounded-full flex items-center justify-center text-slate-600 dark:text-white shadow-lg translate-y-20 opacity-0 transition-all duration-300 hover:border-primary hover:text-primary hover:-translate-y-1 focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>

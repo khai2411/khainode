@@ -1,0 +1,222 @@
+.bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+}
+.dark .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+}
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+}
+.spotlight-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(14, 165, 233, 0.08), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+.spotlight-card:hover .spotlight-overlay {
+    opacity: 1;
+}
+.cert-card {
+  min-height: 0;
+}
+.cert-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#contact-form {
+  max-width: 100%;
+}
+#modal-image {
+  background: #fff !important;
+}
+.mobile-menu-panel {
+  transform: translateY(-12px) scale(.985);
+}
+.mobile-menu-panel:not(.opacity-0) {
+  transform: translateY(0) scale(1);
+}
+.mobile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 72px;
+  padding: 12px 14px;
+  border: 1px solid rgba(148,163,184,.22);
+  border-radius: 20px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.dark .mobile-menu-item {
+  background: rgba(255,255,255,.045);
+  border-color: rgba(255,255,255,.09);
+  box-shadow: 0 14px 35px rgba(0,0,0,.2);
+}
+.mobile-menu-item:hover {
+  transform: translateX(5px);
+  border-color: rgba(14,165,233,.55);
+  box-shadow: 0 14px 35px rgba(14,165,233,.12);
+}
+.mobile-menu-item > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+.mobile-menu-item b {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+.dark .mobile-menu-item b { color: #f8fafc; }
+.mobile-menu-item small {
+  font-size: .72rem;
+  color: #64748b;
+}
+.dark .mobile-menu-item small { color: #94a3b8; }
+.menu-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  background: linear-gradient(135deg, rgba(14,165,233,.16), rgba(56,189,248,.05));
+  color: #0284c7;
+  font-size: 1rem;
+}
+.dark .menu-icon { color: #38bdf8; background: rgba(14,165,233,.1); }
+.menu-arrow {
+  color: #94a3b8;
+  font-size: .8rem;
+  transition: transform .25s ease, color .25s ease;
+}
+.mobile-menu-item:hover .menu-arrow {
+  transform: translateX(3px);
+  color: #0ea5e9;
+}
+.mobile-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.tech-badge {
+  min-height: 62px;
+  padding: 10px 10px;
+  border-radius: 17px;
+  border: 1px solid rgba(148,163,184,.2);
+  background: rgba(255,255,255,.65);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #334155;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.dark .tech-badge {
+  background: rgba(255,255,255,.035);
+  border-color: rgba(255,255,255,.09);
+  color: #e2e8f0;
+}
+.tech-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(14,165,233,.14);
+  border-color: rgba(14,165,233,.45);
+}
+.issuer-logo {
+  width: 31px;
+  height: 31px;
+  flex: 0 0 31px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  position: relative;
+}
+.mimo-logo {
+  background: #111827;
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: -.04em;
+}
+.cisco-logo {
+  background: rgba(4,159,217,.10);
+  gap: 2px;
+  align-items: flex-end;
+  padding: 7px 5px;
+}
+.cisco-logo span {
+  display: block;
+  width: 3px;
+  border-radius: 4px;
+  background: #049fd9;
+}
+.cisco-logo span:nth-child(1) { height: 8px; }
+.cisco-logo span:nth-child(2) { height: 13px; }
+.cisco-logo span:nth-child(3) { height: 17px; }
+.cisco-logo span:nth-child(4) { height: 13px; }
+.cisco-logo span:nth-child(5) { height: 8px; }
+.dicoding-logo {
+  background: #111827;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.idn-logo {
+  background: linear-gradient(135deg,#0f172a,#1e40af);
+  color: #fff;
+  font-size: .6rem;
+  font-weight: 900;
+  letter-spacing: -.03em;
+}
+.microsoft-logo {
+  width: 31px;
+  height: 31px;
+  flex: 0 0 31px;
+  display: grid;
+  grid-template-columns: repeat(2, 10px);
+  grid-template-rows: repeat(2, 10px);
+  gap: 2px;
+  align-content: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 0;
+}
+.microsoft-logo i {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+}
+.microsoft-logo i:nth-child(1) { background: #f25022; }
+.microsoft-logo i:nth-child(2) { background: #7fba00; }
+.microsoft-logo i:nth-child(3) { background: #00a4ef; }
+.microsoft-logo i:nth-child(4) { background: #ffb900; }
+.tech-arrow {
+  margin-left: auto;
+  color: #94a3b8;
+  font-size: .62rem;
+  transition: transform .25s ease, color .25s ease;
+}
+.tech-badge:hover .tech-arrow {
+  transform: translateX(3px);
+  color: #0ea5e9;
+}
+@media (max-width: 380px) {
+  .mobile-tech-grid { grid-template-columns: 1fr; }
+  .mobile-tech-grid .tech-cisco, .mobile-tech-grid .tech-dicoding { grid-column: auto; }
+}

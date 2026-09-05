@@ -1,0 +1,13 @@
+{
+  "name": "khainode-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio khainode.my.id - production Tailwind CSS build",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/style.min.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/style.min.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

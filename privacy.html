@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi | Khai</title>
+    <meta name="description" content="Kebijakan privasi khainode.my.id: penjelasan tentang data yang dikumpulkan dari formulir kontak, analitik situs, dan hak pengunjung.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://khainode.my.id/privacy.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                fontFamily: {
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    display: ['"Space Grotesk"', 'sans-serif'],
+                },
+                extend: { colors: { primary: '#0ea5e9', secondary: '#38bdf8', dark: '#06090e', surface: '#0b111a' } }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#f0f9ff] dark:bg-[#06090e] text-slate-800 dark:text-slate-200 min-h-screen">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    <a href="#main-content" class="skip-link fixed left-4 top-4 z-[9999] -translate-y-24 focus:translate-y-0 bg-primary text-white font-bold px-5 py-3 rounded-xl shadow-lg transition-transform duration-200 outline-none">Lewati ke konten utama</a>
+
+    <header class="max-w-3xl mx-auto px-6 pt-10">
+        <a href="/" class="text-xl font-bold font-display tracking-tight text-slate-900 dark:text-white">
+            khairul<span class="text-primary"> huda</span>
+        </a>
+    </header>
+
+    <main id="main-content" tabindex="-1" class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="font-display text-3xl md:text-4xl font-bold mb-2">Kebijakan Privasi</h1>
+        <p class="text-slate-500 dark:text-slate-400 mb-10">Terakhir diperbarui: 5 September 2026</p>
+
+        <section class="mb-8">
+            <h2 class="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">1. Data dari Formulir Kontak</h2>
+            <p class="leading-relaxed text-slate-600 dark:text-slate-300">Saat Anda mengirim pesan melalui formulir kontak di situs ini, data yang Anda masukkan (nama, alamat email, dan isi pesan) diteruskan ke penyedia layanan pihak ketiga (Web3Forms) untuk diteruskan langsung ke email pemilik situs. Data ini digunakan semata-mata untuk membalas pesan Anda dan tidak dijual atau dibagikan kepada pihak lain untuk kepentingan pemasaran.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">2. Analitik Situs</h2>
+            <p class="leading-relaxed text-slate-600 dark:text-slate-300">Situs ini dapat menggunakan data analitik dasar (seperti jumlah kunjungan dan halaman yang diakses) untuk memahami performa dan penggunaan situs secara umum. Data ini bersifat agregat dan tidak digunakan untuk mengidentifikasi pengunjung secara pribadi.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">3. Cookie &amp; Penyimpanan Lokal</h2>
+            <p class="leading-relaxed text-slate-600 dark:text-slate-300">Situs ini menyimpan preferensi tampilan (mode gelap/terang) di penyimpanan lokal peramban Anda (<code class="text-sm bg-slate-100 dark:bg-white/10 px-1.5 py-0.5 rounded">localStorage</code>). Data ini tersimpan hanya di perangkat Anda dan tidak dikirim ke server mana pun.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">4. Hak Pengunjung</h2>
+            <p class="leading-relaxed text-slate-600 dark:text-slate-300">Anda berhak meminta penghapusan pesan yang pernah Anda kirim melalui formulir kontak, dengan menghubungi alamat email di bawah ini. Anda juga dapat menghapus data preferensi lokal kapan saja melalui pengaturan peramban Anda.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">5. Kontak</h2>
+            <p class="leading-relaxed text-slate-600 dark:text-slate-300">Pertanyaan seputar kebijakan privasi ini dapat diajukan melalui email ke <a href="mailto:kontak@khainode.my.id" class="text-primary underline hover:no-underline">kontak@khainode.my.id</a>.</p>
+        </section>
+
+        <a href="/" class="inline-block mt-4 px-8 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full font-bold hover:scale-[1.02] transition-transform">
+            Kembali ke Beranda
+        </a>
+    </main>
+
+    <footer class="max-w-3xl mx-auto px-6 pb-10 text-sm text-slate-500 dark:text-slate-400">
+        &copy; <span id="year"></span> Khairul Huda. Seluruh hak cipta dilindungi.
+    </footer>
+    <script>
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
