@@ -31,8 +31,9 @@
 .cert-card img {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 #contact-form {
   max-width: 100%;
@@ -209,6 +210,21 @@
 .microsoft-logo i:nth-child(2) { background: #7fba00; }
 .microsoft-logo i:nth-child(3) { background: #00a4ef; }
 .microsoft-logo i:nth-child(4) { background: #ffb900; }
+.simplilearn-logo {
+  background: linear-gradient(135deg,#f59e0b,#0ea5e9);
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.aguna-logo {
+  background: #2fd3cb;
+  color: #0f3d3e;
+  font-size: .62rem;
+  font-weight: 900;
+  letter-spacing: -.03em;
+}
+
 .tech-arrow {
   margin-left: auto;
   color: #94a3b8;
